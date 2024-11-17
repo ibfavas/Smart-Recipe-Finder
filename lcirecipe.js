@@ -7,8 +7,8 @@ document.getElementById('query').addEventListener('keypress', function(e) {
 
 function searchRecipes() {
   const query = document.getElementById('query').value;
-  const appId = '7a16b471';
-  const appKey = '8e3aed72819eb3ca1fd830e58a896243';
+  const appId = '#';
+  const appKey = '#';
   const url = `https://api.edamam.com/search?q=${query}&app_id=${appId}&app_key=${appKey}`;
 
   fetch(url)
