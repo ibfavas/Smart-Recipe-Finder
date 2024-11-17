@@ -10,7 +10,7 @@ app.use(express.json());
 const PORT = 3000;
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/mealDB')
+mongoose.connect('MongoDB')
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
 
