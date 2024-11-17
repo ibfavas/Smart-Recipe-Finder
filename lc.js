@@ -16,8 +16,8 @@ const speakMessage = (message) => {
 
 const fetchEdamamResponse = async (message) => {
     try {
-      const appId = "98f2af47"; 
-      const appKey = "397357662a729947d5cfc203a5add5d3";
+      const appId = "YourID"; 
+      const appKey = "YourKey";
       const url = `https://api.edamam.com/api/nutrition-data?app_id=${appId}&app_key=${appKey}&ingr=${encodeURIComponent(message)}`;
       const response = await fetch(url);
   
