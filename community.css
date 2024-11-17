@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #fff;
+  }
+
+  header {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 115px;
+	z-index: 10;
+	background-image:none;
+	background-position: center top;
+	background-size: auto 200px;
+	background-repeat: repeat-x;
+  }
+  
+
+	.inner {
+		max-width: 1060px;
+		margin: 0 auto;
+		display: flex;
+		height: 70px;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+
+	.logo {
+		position: absolute;
+		top: 0;
+		left: 0;
+        margin-top:-5%;
+        margin-left: 10%;
+		background-color: none;
+		text-align: center;
+
+	}
+    .logg{
+        margin-right: -10%;
+        margin-left: 5%;
+        margin-top: 0.5%;
+      }
+	nav {
+		display: none;
+
+		a {
+			font-family: 'Arial', serif;
+			font-size: 12px;
+			color: #8c8c8e;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			text-decoration: none;
+			margin: 0 18px;
+
+			&:hover {
+				color: white;
+			}
+		}
+
+		@media screen and (min-width: 800px) {
+			display: block;
+		}
+	}
+.recipe-list {
+    padding: 20px;
+    margin-top: 5%;
+}
+
+.recipe-card {
+    display: flex;
+    background-color: black;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.recipe-details {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+}
+
+.recipe-card img {
+    border-radius: 5px;
+    width: 200px; /* Adjust the width of the image as needed */
+    height: auto;
+    margin-right: 20px; /* Add margin to the right side of the image */
+}
+.recipe-card h3 {
+    margin-top: 0;
+}
+
+.recipe-card p {
+    margin-bottom: 10px;
+}
+
+.recipe-card a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comments h4 {
+    margin-top: 0;
+}
+
+.comments ul {
+    padding: 0;
+}
+
+.comments ul li {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.comments form {
+    margin-top: 10px;
+}
+
+.comments form textarea {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.comments form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.comments form button:hover {
+    background-color: #0056b3;
+}

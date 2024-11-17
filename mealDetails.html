@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Details</title>
+  <link rel="stylesheet" href="mealDetails.css">
+</head>
+<body>
+  <header>
+    <!-- Your header content -->
+  </header>
+
+  <div id="mealDetails" style="padding-top: 115px;">
+    <!-- Meal details content will be dynamically updated here -->
+  </div>
+
+  <script>
+    // Function to fetch meal details based on URL parameter
+    function getMealDetails() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const mealId = urlParams.get('id');
+
+      if (!mealId) {
+        alert('Meal ID not found in URL');
+        return;
+      }
+
+      fetch(`http://localhost:3000/meals/${mealId}`) // Update the URL here
+        .then(response => response.json())
+        .then(data => {
+          const mealContainer = document.getElementById('mealDetails');
+          mealContainer.innerHTML = `
+            <h2>${data.name}</h2>
+            <img src="${data.image}" alt="${data.name}">
+            <p class="meal-type">${data.type}</p>
+            <p class="meal-description">${data.description}</p>
+            <p class="meal-clicks">Clicks: ${data.clicks}</p>
+            <p class="meal-recipe">Recipe: ${data.recipe}</p>
+          `;
+
+          // Call function to update click count
+          updateClickCount(mealId);
+        })
+        .catch(error => console.error('Error fetching meal details:', error));
+    }
+
+    // Function to update click count
+    function updateClickCount(mealId) {
+      fetch(`http://localhost:3000/meals/${mealId}/clicks`, {
+        method: 'PUT'
+      })
+      .then(response => response.json())
+      .then(data => console.log('Click count updated:', data))
+      .catch(error => console.error('Error updating click count:', error));
+    }
+
+    getMealDetails(); // Call function on page load
+  </script>
+</body>
+</html>
