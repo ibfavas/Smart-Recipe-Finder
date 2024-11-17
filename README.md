@@ -30,6 +30,6 @@ This project showcases my skills in **frontend and backend development**, demons
  - Contributions are welcome! 🛠️ If you have ideas or enhancements, feel free to open an issue or submit a pull request.
 
 ## 📜 License
-- This project is licensed under the MIT License.
+- This project is licensed under the [MIT License](https://github.com/ibfavas/Smart-Recipe-Finder/blob/master/LICENSE).
 - See the LICENSE file for details.
     
