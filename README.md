@@ -1,4 +1,5 @@
-![logo](https://github.com/[ibfavas]/[Smart-Recipe-Finder]/blob/[Images]/New Project 8 [6725AD2].png?raw=true)
+![logo](https://github.com/ibfavas/Smart-Recipe-Finder/blob/Images/New%20Project%208%20%5B6725AD2%5D.png?raw=true)
+
 
 # 🍳 Smart Recipe Finder
 
