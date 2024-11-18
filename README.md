@@ -1,3 +1,6 @@
+![Logo](Images/New Project 8 [6725AD2].png)
+
+
 # 🍳 Smart Recipe Finder
 
 A **Smart Recipe Finder Application** that empowers users to discover recipes based on the ingredients they have on hand. This project demonstrates a full-stack implementation with a focus on creating an intuitive user experience and seamless backend performance.
