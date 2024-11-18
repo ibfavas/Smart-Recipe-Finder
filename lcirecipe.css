@@ -101,7 +101,9 @@ body {
   .recipe-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: 9px;
+    width: 256px;
+    height: 305px;
   }
   
   .recipe-card {
@@ -119,6 +121,8 @@ body {
   .recipe-card img {
     border-radius: 12px 12px 0 0;
     margin-bottom: 10px;
+    width: 252px;
+    height: 300px;
   }
   
   .recipe-card h3 {
