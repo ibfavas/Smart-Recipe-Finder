@@ -25,9 +25,12 @@ This project showcases my skills in **frontend and backend development**, demons
 - **Frontend**: 🌐 HTML, 🎨 CSS, 🖱️ JavaScript
 - **Backend**: 📊 MongoDB, 🚀 Express.js, ⚛️ React.js, 🛠️ Node.js (**MERN stack**)
 
+---
 
 ## 🤝 Contributing
  - Contributions are welcome! 🛠️ If you have ideas or enhancements, feel free to open an issue or submit a pull request.
+
+---
 
 ## 📜 License
 - This project is licensed under the [MIT License](https://github.com/ibfavas/Smart-Recipe-Finder/blob/master/LICENSE).
